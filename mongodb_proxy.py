@@ -26,13 +26,9 @@ log = logging.getLogger(__name__)
 MONGO_METHODS_NEEDING_RETRY = {
     pymongo.collection.Collection: [
         'aggregate',
-        'ensure_index',
+        'create_index',
         'find',
         'find_one',
-        'group',
-        'inline_map_reduce',
-        'map_reduce',
-        'parallel_scan',
     ],
 }
 
